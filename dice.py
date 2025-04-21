@@ -1,9 +1,11 @@
 import random
-
+avr=0
 for i in range(10):
     x = random.randint(1,6)
+    avr=x+avr
     print(str(i+1)+"回目："+str(x))
-
+avr=avr/10
+print('平均値:'+str(x))
 # 期待される出力結果例
 """
 1回目：4
